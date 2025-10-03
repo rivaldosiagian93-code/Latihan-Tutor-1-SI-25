@@ -1,14 +1,14 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T00 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a, b;
+        double a, b;
 
-        a = Integer.parseInt(input.nextLine());
-        b = Integer.parseInt(input.nextLine());
+        a = Double.parseDouble(input.nextLine());
+        b = Double.parseDouble(input.nextLine());
         if (a % 2 == 0) {
             System.out.println(" bilangan pertama : genap ");
         } else {
@@ -22,7 +22,7 @@ public class T00 {
         if (a > b) {
             System.out.println(" bilangan pertama lebih besar ");
         }
-        if (a < b) {
+        if (b > a) {
             System.out.println(" bilangan kedua lebih besar ");
             System.out.println("berbeda jenis");
         }
