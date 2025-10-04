@@ -5,33 +5,39 @@ public class T00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a, b;
+        int x, y, hasilpenjumlahan, hasilperkalian;
 
-        a = Integer.parseInt(input.nextLine());
-        b = Integer.parseInt(input.nextLine());
-        if (a % 2 == 0) {
-            System.out.println(" bilangan pertama : genap ");
+        x = Integer.parseInt(input.nextLine());
+        y = Integer.parseInt(input.nextLine());
+        if (x % 2 == 0) {
+            System.out.println("bilangan pertama: genap ");
         } else {
-            System.out.println(" bilangan pertama : ganjil ");
+            System.out.println("bilangan pertama: ganjil ");
         }
-        if (b % 2 == 0) {
-            System.out.println(" bilangan kedua : genap ");
+        if (y % 2 == 0) {
+            System.out.println("bilangan pertama: genap ");
         } else {
-            System.out.println(" bilangan kedua : ganjil ");
+            System.out.println("bilangan pertama: ganjil ");
         }
-        if (a > b) {
+        if (x > y) {
             System.out.println(" bilangan pertama lebih besar ");
+        } else {
+            if (y > x) {
+                System.out.println(" bilangan kedua lebih besar ");
+            } else {
+                System.out.println(" kedua bilangan sama besar ");
+            }
         }
-        if (a < b) {
-            System.out.println(" bilangan kedua lebih besar ");
-            System.out.println("berbeda jenis");
-        }
-        if (a % 2 == 0 && b % 2 == 0) {
-            System.out.println(" Hasil penjumlahan : " + a + b);
-        }
-        if (a % 2 == 1 && b % 2 == 1) {
-            System.out.println(" kedua bilangan sama besar");
-            System.out.println("Hasil perkalian: " + a * b);
+        if (x % 2 == 0 && y % 2 == 0) {
+            hasilpenjumlahan = x + y;
+            System.out.println("hasilpenjumlahan: " + hasilpenjumlahan);
+        } else {
+            if (x % 2 != 0 && y % 2 != 0) {
+                hasilperkalian = x * y;
+                System.out.println("hasil perkalian: " + hasilperkalian);
+            } else {
+                System.out.println("berbeda jenis");
+            }
         }
     }
 }

@@ -4,57 +4,63 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="RIVALDO SIAGIAN"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-03 03:12:13 PM"/>
-        <attribute name="created" value="UklWQUxETyBTSUFHSUFOO1ZBTERPLVNJQUdJQU47MjAyNS0xMC0wMTswODoyMjowMiBQTTszMjY1"/>
-        <attribute name="edited" value="UklWQUxETyBTSUFHSUFOO1ZBTERPLVNJQUdJQU47MjAyNS0xMC0wMzswMzoxMjoxMyBQTTs1OzMzNzU="/>
+        <attribute name="saved" value="2025-10-04 01:34:48 PM"/>
+        <attribute name="created" value="UklWQUxETyBTSUFHSUFOO1ZBTERPLVNJQUdJQU47MjAyNS0xMC0wNDswMTowOTo0MCBQTTszMjY4"/>
+        <attribute name="edited" value="UklWQUxETyBTSUFHSUFOO1ZBTERPLVNJQUdJQU47MjAyNS0xMC0wNDswMTozNDo0OCBQTTsxOzMzODI="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="a, b" type="Integer" array="False" size=""/>
-            <input variable="a"/>
-            <input variable="b"/>
-            <if expression="( a mod 2 = 0 )">
+            <declare name="x, y, hasilpenjumlahan, hasilperkalian" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <if expression="x mod 2 = 0">
                 <then>
-                    <output expression="&quot; bilangan pertama : genap &quot;" newline="True"/>
+                    <output expression="&quot;bilangan pertama: genap &quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot; bilangan pertama : ganjil &quot;" newline="True"/>
+                    <output expression="&quot;bilangan pertama: ganjil &quot;" newline="True"/>
                 </else>
             </if>
-            <if expression="( b mod 2 = 0 )">
+            <if expression="y mod 2 = 0">
                 <then>
-                    <output expression="&quot; bilangan kedua : genap &quot;" newline="True"/>
+                    <output expression="&quot;bilangan pertama: genap &quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot; bilangan kedua : ganjil &quot;" newline="True"/>
+                    <output expression="&quot;bilangan pertama: ganjil &quot;" newline="True"/>
                 </else>
             </if>
-            <if expression="( a &gt; b )">
+            <if expression="x&gt;y">
                 <then>
                     <output expression="&quot; bilangan pertama lebih besar &quot;" newline="True"/>
                 </then>
-                <else/>
+                <else>
+                    <if expression="y&gt;x">
+                        <then>
+                            <output expression="&quot; bilangan kedua lebih besar &quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot; kedua bilangan sama besar &quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
             </if>
-            <if expression="( a &lt; b)">
+            <if expression="(x mod 2 = 0 ) &amp;&amp;(y mod 2 = 0 )">
                 <then>
-                    <output expression="&quot; bilangan kedua lebih besar &quot;" newline="True"/>
-                    <output expression="&quot;berbeda jenis&quot;" newline="True"/>
+                    <assign variable="hasilpenjumlahan" expression="x+y"/>
+                    <output expression="&quot;hasilpenjumlahan: &quot;&amp; hasilpenjumlahan" newline="True"/>
                 </then>
-                <else/>
-            </if>
-            <if expression="( a mod 2 = 0 ) and ( b mod 2 = 0 )">
-                <then>
-                    <output expression="&quot; Hasil penjumlahan : &quot; &amp; ( a + b )" newline="True"/>
-                </then>
-                <else/>
-            </if>
-            <if expression="(a mod 2 = 1) and (b mod 2 = 1)">
-                <then>
-                    <output expression="&quot; kedua bilangan sama besar&quot;" newline="True"/>
-                    <output expression="&quot;Hasil perkalian: &quot; &amp; ( a * b )" newline="True"/>
-                </then>
-                <else/>
+                <else>
+                    <if expression="(x mod 2 != 0 )&amp;&amp;(y mod 2 != 0)">
+                        <then>
+                            <assign variable="hasilperkalian" expression="x*y"/>
+                            <output expression="&quot;hasil perkalian: &quot;&amp; hasilperkalian" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;berbeda jenis&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
             </if>
         </body>
     </function>
