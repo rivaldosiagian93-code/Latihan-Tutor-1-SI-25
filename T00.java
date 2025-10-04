@@ -1,3 +1,5 @@
+//12S25002-Rivaldo Siagian
+//12S25015-Chytia lovemia Tambunan 
 import java.util.*;
 import java.lang.Math;
 
@@ -10,33 +12,33 @@ public class T00 {
         x = Integer.parseInt(input.nextLine());
         y = Integer.parseInt(input.nextLine());
         if (x % 2 == 0) {
-            System.out.println("bilangan pertama: genap ");
+            System.out.println("Bilangan pertama: Genap ");
         } else {
-            System.out.println("bilangan pertama: ganjil ");
+            System.out.println("Bilangan pertama: Ganjil ");
         }
         if (y % 2 == 0) {
-            System.out.println("bilangan pertama: genap ");
+            System.out.println("Bilangan pertama: Genap ");
         } else {
-            System.out.println("bilangan pertama: ganjil ");
+            System.out.println("Bilangan pertama: Ganjil ");
         }
         if (x > y) {
-            System.out.println(" bilangan pertama lebih besar ");
+            System.out.println("Bilangan pertama lebih besar ");
         } else {
             if (y > x) {
-                System.out.println(" bilangan kedua lebih besar ");
+                System.out.println("Bilangan kedua lebih besar ");
             } else {
-                System.out.println(" kedua bilangan sama besar ");
+                System.out.println("Kedua bilangan sama besar ");
             }
         }
         if (x % 2 == 0 && y % 2 == 0) {
             hasilpenjumlahan = x + y;
-            System.out.println("hasilpenjumlahan: " + hasilpenjumlahan);
+            System.out.println("Hasil penjumlahan: " + hasilpenjumlahan);
         } else {
             if (x % 2 != 0 && y % 2 != 0) {
                 hasilperkalian = x * y;
-                System.out.println("hasil perkalian: " + hasilperkalian);
+                System.out.println("Hasil perkalian: " + hasilperkalian);
             } else {
-                System.out.println("berbeda jenis");
+                System.out.println("Berbeda jenis");
             }
         }
     }
