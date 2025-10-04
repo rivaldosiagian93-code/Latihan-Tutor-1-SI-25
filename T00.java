@@ -17,9 +17,9 @@ public class T00 {
             System.out.println("Bilangan pertama: Ganjil ");
         }
         if (y % 2 == 0) {
-            System.out.println("Bilangan pertama: Genap ");
+            System.out.println("Bilangan kedua: Genap ");
         } else {
-            System.out.println("Bilangan pertama: Ganjil ");
+            System.out.println("Bilangan kedua: Ganjil ");
         }
         if (x > y) {
             System.out.println("Bilangan pertama lebih besar ");

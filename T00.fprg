@@ -4,9 +4,9 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="RIVALDO SIAGIAN"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-04 01:45:58 PM"/>
+        <attribute name="saved" value="2025-10-04 01:53:21 PM"/>
         <attribute name="created" value="UklWQUxETyBTSUFHSUFOO1ZBTERPLVNJQUdJQU47MjAyNS0xMC0wNDswMTowOTo0MCBQTTszMjY4"/>
-        <attribute name="edited" value="UklWQUxETyBTSUFHSUFOO1ZBTERPLVNJQUdJQU47MjAyNS0xMC0wNDswMTo0NTo1OCBQTTsyOzMzODY="/>
+        <attribute name="edited" value="UklWQUxETyBTSUFHSUFOO1ZBTERPLVNJQUdJQU47MjAyNS0xMC0wNDswMTo1MzoyMSBQTTszOzMzNzY="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -24,10 +24,10 @@
             </if>
             <if expression="y mod 2 = 0">
                 <then>
-                    <output expression="&quot;Bilangan pertama: Genap &quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Genap &quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan pertama: Ganjil &quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Ganjil &quot;" newline="True"/>
                 </else>
             </if>
             <if expression="x&gt;y">
